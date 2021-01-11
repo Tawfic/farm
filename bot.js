@@ -1,8 +1,7 @@
 //✠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ☢❦۞❦☢ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬✠//BY: POULAZ (Angry Black)
 //copyright © Angry Black 2020.//❦Angry Black❦
-
 const Discord = require("discord.js");
-const myid = ['Your ID'];//هنا بتحط الايدى بتاعك بتاع الديسكورد
+const myid = ['755483047494942893'];//هنا بتحط الايدى بتاعك بتاع الديسكورد
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 const client3 = new Discord.Client();
@@ -54,7 +53,7 @@ client21.login(process.env.TOKEN21);
 client22.login(process.env.TOKEN22);
 client23.login(process.env.TOKEN23);
 client24.login(process.env.TOKEN24);
-
+client25.login(process.env.TOKEN25);
 //✠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ☢❦۞❦☢ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬✠//BY: POULAZ (Angry Black)
 
 client.on('message', message => {
@@ -381,12 +380,23 @@ message.channel.send('#credits')
     var text = message.content.split(' ').slice(1).join(' ');
      message.channel.send(text);
   }
+  if (message.content === '$d') {
+message.channel.send('#daily')
+  }
+  if(message.content === '$c'){
+message.channel.send('#credits')
+  }
+ if(message.content ===  '$u'){
+message.channel.send("©angryblack YT")
+  }   
+  if(message.content.startsWith("$s")) {
+
 });
 
 //✠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ☢❦۞❦☢ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬✠//BY: POULAZ (Angry Black)
 
 
-client.on('message', message => {
+client1.on('message', message => {
 if (message.content === '$spam') {
       let count = 0;
       let ecount = 0;
@@ -711,6 +721,8 @@ if (message.content === '$spam') {
         }
       }
 });
+});
+
 
 client24.on('message', message => {
 if (message.content === '$spam') {
@@ -725,10 +737,23 @@ if (message.content === '$spam') {
         }
       }
 });
+client25.on('message', message => {
+if (message.content === '$spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 30000; x++) {
+        message.channel.send(`**??? ???? ??? **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
 
-//✠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ☢❦۞❦☢ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬✠//BY: POULAZ (Angry Black)
+//✠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ☢❦۞❦☢ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬✠//BY: POULAZ (Angry Black )
 
-client.on("ready", () => {
+client25.on("ready", () => {
   console.log('Bot created by ©Angry Black')
 })
 
@@ -746,13 +771,13 @@ client2.on('message', message => {
 
 client3.on('message', message => {
     if(message.content === '!rep'){
-        message.channel.send("#rep "+"<@" + myid + ">")
+        message.channel.send("#rep "+"<@" + 755483047494942893 + ">")
     }
 });
 
 client4.on('message', message => {
     if(message.content === '!rep'){
-        message.channel.send("#rep "+"<@" + myid + ">")
+        message.channel.send("#rep "+"<@" +  + ">")
     }
 });
 
@@ -880,7 +905,18 @@ client24.on('message', message => {
     if(message.content === '!rep'){
         message.channel.send("#rep "+"<@" + myid + ">")
     }
-});
+});client25.on('message', message => {
+if (message.content === '$spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 30000; x++) {
+        message.channel.send(`**??? ???? ??? **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
 
 //copyright © Angry Black 2020.//❦Angry Black❦
 //✠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ☢❦۞❦☢ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬✠//BY: POULAZ (Angry Black)
